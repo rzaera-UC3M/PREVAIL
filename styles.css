@@ -1,3 +1,33 @@
+
+.funding-strip {
+  background: #ffffff;
+  border-bottom: 1px solid var(--line);
+}
+
+.funding-strip-inner {
+  min-height: 92px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.funding-strip p {
+  margin: 0;
+  color: var(--ink);
+  font-size: .98rem;
+  line-height: 1.4;
+}
+
+.funding-strip img {
+  display: block;
+  width: min(470px, 52vw);
+  height: auto;
+  object-fit: contain;
+}
+
 :root {
   --ink: #122033;
   --muted: #5d6a7a;
@@ -97,4 +127,19 @@ h2 { margin: 0; font-size: clamp(2rem, 3.5vw, 3.35rem); letter-spacing: -.035em;
   .hero { padding-top: 54px; }
   .hero-visual { display: none; }
   .publication, .card, .team-block { padding: 20px; }
+}
+
+
+@media (max-width: 760px) {
+  .funding-strip-inner {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
+
+  .funding-strip img {
+    width: min(100%, 520px);
+  }
 }
