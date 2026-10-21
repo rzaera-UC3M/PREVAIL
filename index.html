@@ -24,6 +24,7 @@
       <nav class="nav" aria-label="Navegación principal">
         <a href="#proyecto">Proyecto</a>
         <a href="#objetivos">Objetivos</a>
+        <a href="#desarrollos">Desarrollos</a>
         <a href="#equipo">Equipo</a>
         <a href="#publicaciones">Publicaciones</a>
         <a href="#congresos">Congresos</a>
@@ -47,13 +48,8 @@
           </div>
         </div>
 
-        <div class="hero-visual" aria-hidden="true">
-          <div class="lattice">
-            <span></span><span></span><span></span><span></span><span></span>
-            <span></span><span></span><span></span><span></span><span></span>
-            <span></span><span></span><span></span><span></span><span></span>
-            <span></span><span></span><span></span><span></span><span></span>
-          </div>
+        <div class="hero-visual project-hero-visual">
+          <img class="hero-project-image" src="2D_Lattice.jpeg" alt="Metamaterial 2D de cuatro celdas empleado para el ajuste térmico del band gap">
           <div class="bandgap-card">
             <span>propagación</span>
             <strong>band gap</strong>
@@ -137,6 +133,127 @@
             <h3>Modelización y validación</h3>
             <p>Combinar simulación, optimización y ensayo experimental para validar las soluciones desarrolladas y facilitar su aplicación industrial.</p>
           </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="desarrollos" class="section developments-section">
+      <div class="wrap">
+        <p class="section-kicker">Desarrollos</p>
+        <h2>Resultados y líneas de desarrollo</h2>
+        <p class="developments-intro">
+          El proyecto integra caracterización de materiales impresos, diseño computacional de
+          estructuras periódicas y validación experimental, con el objetivo de controlar de forma
+          predecible la propagación de ondas mecánicas y ampliar los rangos de atenuación.
+        </p>
+
+        <div class="development-list">
+          <article class="development-item">
+            <div class="development-index">01</div>
+            <div>
+              <h3>Caracterización termo-electro-mecánica de termoplásticos conductores</h3>
+              <p>
+                Se ha desarrollado una metodología experimental para caracterizar filamentos
+                termoplásticos conductores desde una perspectiva mecánica, eléctrica y térmica,
+                incluyendo sus acoplamientos. Sobre esa base se formuló un modelo de
+                homogeneización de campo completo que incorpora viscoplasticidad, conducción
+                eléctrica y térmica, convección y calentamiento por efecto Joule. El marco permite
+                relacionar la microestructura del material con la respuesta multifísica y orientar
+                virtualmente parámetros de fabricación hacia propiedades objetivo.
+              </p>
+              <a href="https://doi.org/10.1038/s41524-023-01091-8" target="_blank" rel="noopener">Publicación asociada ↗</a>
+            </div>
+          </article>
+
+          <article class="development-item">
+            <div class="development-index">02</div>
+            <div>
+              <h3>Optimización topológica de <em>band gaps</em> alrededor de frecuencias objetivo</h3>
+              <p>
+                Se ha propuesto un procedimiento de optimización topológica BESO para lattices
+                bimateriales basado en condiciones de Bloch-Floquet sobre una única celda unidad.
+                La función objetivo utiliza las frecuencias naturales más próximas a una frecuencia
+                prescrita, reduciendo el coste computacional y manteniendo la optimización centrada
+                en el rango de interés. El método determina además la fracción volumétrica óptima de
+                los materiales para maximizar la anchura del <em>band gap</em>.
+              </p>
+              <a href="https://doi.org/10.1016/j.compstruc.2024.107601" target="_blank" rel="noopener">Publicación asociada ↗</a>
+            </div>
+          </article>
+
+          <article class="development-item">
+            <div class="development-index">03</div>
+            <div>
+              <h3>Lattices monomaterial fabricables para atenuación y guiado de ondas</h3>
+              <p>
+                La metodología se ha extendido a estructuras planas de un único material mediante
+                Three-field Floating Projection Topology Optimization (FPTO). La formulación genera
+                distribuciones binarias con contornos suaves e introduce una condición de
+                conectividad basada en conductividad térmica homogenizada para evitar regiones
+                aisladas y mejorar la fabricabilidad. Los diseños obtenidos permiten situar
+                <em>band gaps</em> en frecuencias prescritas y se han aplicado tanto a atenuación
+                como a filtrado de banda ancha y guiado de ondas.
+              </p>
+              <a href="https://doi.org/10.1016/j.tws.2025.113758" target="_blank" rel="noopener">Publicación asociada ↗</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="experimental-showcase">
+          <div class="showcase-heading">
+            <p class="section-kicker">Demostrador experimental</p>
+            <h2>Ajuste térmico y validación de la atenuación</h2>
+            <p>
+              Un lattice 2D de cuatro celdas combina la respuesta mecánica de la estructura con
+              calentamiento resistivo de las celdas. La variación de temperatura modifica la
+              respuesta dinámica, mientras la transmisibilidad y la vibrometría láser permiten
+              evaluar la atenuación de desplazamientos en el rango del <em>band gap</em>.
+            </p>
+          </div>
+
+          <div class="image-gallery">
+            <figure class="gallery-item gallery-wide">
+              <a href="2D_Lattice.jpeg" target="_blank" rel="noopener">
+                <img src="2D_Lattice.jpeg" alt="Metamaterial 2D de cuatro celdas para ajuste térmico del band gap">
+              </a>
+              <figcaption>Metamaterial 2D de cuatro celdas para ajuste térmico del <em>band gap</em>.</figcaption>
+            </figure>
+
+            <figure class="gallery-item">
+              <a href="Transmissibility.jpeg" target="_blank" rel="noopener">
+                <img src="Transmissibility.jpeg" alt="Curva de transmisibilidad con fuerte atenuación en la banda prohibida">
+              </a>
+              <figcaption>Curva de transmisibilidad: fuerte atenuación en la banda prohibida.</figcaption>
+            </figure>
+
+            <figure class="gallery-item gallery-wide">
+              <a href="Lattice_displacement_contour.jpeg" target="_blank" rel="noopener">
+                <img src="Lattice_displacement_contour.jpeg" alt="Contorno de desplazamientos del lattice en el rango del band gap">
+              </a>
+              <figcaption>Contorno de desplazamientos en el rango del <em>band gap</em>, mostrando la reducción de la respuesta a lo largo del lattice.</figcaption>
+            </figure>
+
+            <figure class="gallery-item">
+              <a href="Experimental_Setup_1.jpeg" target="_blank" rel="noopener">
+                <img src="Experimental_Setup_1.jpeg" alt="Lattice conectado al shaker y al circuito eléctrico de calentamiento">
+              </a>
+              <figcaption>Montaje experimental: excitación con <em>shaker</em> y circuito eléctrico para calentamiento de las celdas.</figcaption>
+            </figure>
+
+            <figure class="gallery-item">
+              <a href="Experimental_Setup_2.jpeg" target="_blank" rel="noopener">
+                <img src="Experimental_Setup_2.jpeg" alt="Medida termográfica de la elevación de temperatura en el lattice">
+              </a>
+              <figcaption>Medida termográfica de la elevación de temperatura en el lattice.</figcaption>
+            </figure>
+
+            <figure class="gallery-item">
+              <a href="Experimental_Setup_3.jpeg" target="_blank" rel="noopener">
+                <img src="Experimental_Setup_3.jpeg" alt="Medida de desplazamientos de entrada y salida mediante vibrometría láser">
+              </a>
+              <figcaption>Medida de desplazamientos de entrada y salida mediante vibrometría láser.</figcaption>
+            </figure>
+          </div>
         </div>
       </div>
     </section>
