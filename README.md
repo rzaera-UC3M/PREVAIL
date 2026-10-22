@@ -1,21 +1,31 @@
-# PREVAIL — web del proyecto
+# PREVAIL — web del proyecto (v5)
 
-Archivos preparados para GitHub Pages.
+Esta versión incluye todos los archivos necesarios para GitHub Pages:
 
-## Publicación
+- `index.html`
+- `styles.css`
+- `funding-logos.png`
+- `2D_Lattice.jpeg`
+- `Transmissibility.jpeg`
+- `Lattice_displacement_contour.jpeg`
+- `Experimental_Setup_1.jpeg`
+- `Experimental_Setup_2.jpeg`
+- `Experimental_Setup_3.jpeg`
+- `.nojekyll`
 
-1. Sube `index.html` y `styles.css` a la raíz del repositorio `PREVAIL`.
-2. En GitHub: `Settings` → `Pages`.
-3. En `Build and deployment`, selecciona `Deploy from a branch`.
-4. Branch: `main`; carpeta: `/(root)`.
-5. Guarda los cambios.
+## Actualización del repositorio
 
-La web quedará en una URL de este tipo:
+Sube **todos estos archivos a la raíz del repositorio PREVAIL**.  
+Si GitHub avisa de que `index.html` y `styles.css` ya existen, debes reemplazarlos / confirmar el commit.
+
+Después comprueba que en la raíz del repositorio aparecen los seis `.jpeg`.
+
+La web se publica desde:
+
+`main` → `/(root)`
+
+URL esperada:
 
 `https://rzaera-uc3m.github.io/PREVAIL/`
 
-## Edición
-
-- El contenido está en `index.html`.
-- El aspecto visual está en `styles.css`.
-- Las publicaciones enlazan a sus DOI oficiales.
+Si tras el commit aparece aún la versión anterior, recarga con `Ctrl+F5`.
