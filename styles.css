@@ -17,8 +17,9 @@
 .funding-strip p {
   margin: 0;
   color: var(--ink);
-  font-size: .98rem;
+  font-size: 1.28rem;
   line-height: 1.4;
+  font-weight: 600;
 }
 
 .funding-strip img {
@@ -51,7 +52,7 @@ a { color: inherit; }
 .nav a { text-decoration: none; color: var(--muted); font-size: .92rem; font-weight: 650; }
 .nav a:hover, .nav a:focus-visible { color: var(--accent-dark); }
 .hero { background: radial-gradient(circle at 82% 18%, rgba(181,107,53,.13), transparent 24%), linear-gradient(135deg, #f8fafb 0%, #ffffff 52%, #eef3f6 100%); padding: 82px 0 34px; border-bottom: 1px solid var(--line); }
-.hero-grid { display: grid; grid-template-columns: 1.25fr .75fr; gap: 72px; align-items: center; }
+.hero-grid { display: grid; grid-template-columns: minmax(0, 1fr); gap: 72px; align-items: center; }
 .eyebrow, .section-kicker { margin: 0 0 12px; color: var(--accent-dark); font-size: .78rem; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; }
 h1, h2, h3 { line-height: 1.15; text-wrap: balance; }
 h1 { margin: 0; max-width: 900px; font-size: clamp(2.5rem, 5vw, 5.25rem); letter-spacing: -.045em; }
@@ -295,4 +296,15 @@ h2 { margin: 0; font-size: clamp(2rem, 3.5vw, 3.35rem); letter-spacing: -.035em;
     height: auto;
     max-height: none;
   }
+}
+
+.hero-copy {
+  max-width: 980px;
+}
+
+/* Final funding acknowledgement emphasis */
+.funding-strip p {
+  font-size: 1.30rem;
+  font-weight: 650;
+  line-height: 1.35;
 }
